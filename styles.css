@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Roboto Regular; /* Гарнитура шрифта */
+    src: url(fonts/rr.ttf); /* Путь к файлу со шрифтом */
+   }
+
+body{
+	font-family: Roboto Regular;
+}
+p{
+	font-size: 10px;
+}
+a{
+	text-decoration: none;
+}
+
+table{
+	border-collapse: collapse;
+	width:auto;
+	font-size: 12px;
+
+}
+
+td,th{
+	vertical-align: middle;
+	height: 30px;
+	min-width:50px;
+	box-sizing:border-box;
+	padding: 5px 5px 5px 10px;
+	text-align: center;
+	border-bottom: 1px solid gray;
+}
+
+table th{
+	color:blue;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+table td:first-child, th:first-child{
+	text-align: left;
+	width:40px;
+	
+}
+
+table td:last-child, th:last-child{
+	background: #f9f9f7;
+	text-align: right;
+	
+}
+
+table td:nth-child(2), th:nth-child(2){
+	border-right: 1px solid gray;
+	min-width: 150px;
+	width:auto;
+	text-align:left;
+	color:black;
+}
+
+.cellColor1{
+	background-color: #7fd498;
+}
+
+.cellColor2{
+	background-color: #cceed6;
+}
+
+.cellColor4{
+	background-color: #ff99b1;
+}
+
+.nation-flag {
+	width: 20px; height: 14px;
+	background: url('italy.png');
+	display: inline-block;
+	background-repeat: no-repeat;
+	margin-right: 3px;
+	vertical-align: bottom;
+}
+
+@media screen and (max-width: 550px) {
+     .adaptive { display: none; }
+}

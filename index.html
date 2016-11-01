@@ -1,0 +1,30 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CaseSportsRU</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<table >
+	<thead>
+	<tr>
+	  	<th></th>
+	    <th align="left" width=150px>Команда</th>
+	    <th><a onclick="sortFunc('matches')" href="#">M</a></th>
+	    <th class="adaptive"><a onclick="sortFunc('win')" href="#">В</a></th>
+	    <th class="adaptive"><a onclick="sortFunc('draw')" href="#">Н</a></th>
+	    <th class="adaptive"><a onclick="sortFunc('lose')" href="#">П</a></th>
+	    <th class="adaptive"><a onclick="sortFunc('goals')" href="#">Заб</a></th>
+	    <th class="adaptive"><a onclick="sortFunc('conceded_goals')" href="#">Проп</a></th>
+	    <th class="gray-color"><a onclick="sortFunc('score')" href="#">О</a></th>
+  	</tr>
+  	</thead>
+  	<tbody id="tableBody">
+  	</tbody>
+  	</table>
+
+  	<p><b>М</b> - матчи, <b>В</b> - выигрыши, <b>Н</b> - ничьи, <b>П</b> - проигрыши, <b>Заб</b> - забитые голы, <b>Проп</b> - пропущенные голы, <b>О</b> - очки в турнире</p>
+</body>
+</html>
